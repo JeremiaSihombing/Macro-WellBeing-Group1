@@ -1,25 +1,17 @@
 *{
 
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
   
 }
 body{
   background-color: #fff;
 }
 
-.navbar-expand-lg{
-  position: sticky;
-}
 
-.carousel {
-  width:800px;
-  height:500px;
-
-}
 
 #hero-container {
-  background-image: url('./images/hero.png');
-  background-size: cover;
+
   width: 837px;
   height: 605px;
   display: flex;
@@ -140,4 +132,22 @@ a {
   padding-top: 96px;
   justify-content: center;
   text-align: center;
+}
+
+.btn1{
+ background-color: #fa9884 ;
+ border: none;
+ font-size: 16;
+ font-weight: 400;
+ width: 172px;
+ height: 60px;
+ border-radius: 100px;
+ align-items: center;
+ margin-left: 100px;
+
+}
+
+.btn1 a{
+  color: #ffff;
+  text-decoration: none;
 }
