@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FA9884">
+    <meta name="msapplication-navbutton-color" content="#FA9884">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FA9884">
+    <title>Well Being</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ff988c96b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg " style="background-color: #FA9884;" >
+      <div class="container-fluid ">
+        <a class="navbar-brand px-lg-4" style="font-weight: 700;" href="/Macro-WellBeing-Group1" >WELL <span style="color: #ffff;">BEING</span> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 " type="search"  placeholder="Pencarian" aria-label="Search">
+          <!-- <button class="btn " type="submit"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i></button> -->
+        </form>
+        <div class="d-flex justify-content-end">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" clas>
+          <ul class="navbar-nav me-4 mb-2 mb-lg-0" >
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="/Macro-WellBeing-Group1">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/Macro-WellBeing-Group1/artikel">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Panduan</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Kalkulator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/daftar">Daftar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/masuk">Masuk</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="article-container">
+      	<h3>Artikel Terbaru</h3>
+      	<div id="list-card-article"></div>
+      	    <button id="loadMore" onClick="articleList(startCardList)">Load More</button>
+    </div>
+
+    <script>
+      	let articles = [
+              {
+              	judul: "Judul Artikel 1",
+                  img: "https://images.unsplash.com/photo-1565895405138-6c3a1555da6a",
+                  isi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem repellendus rem quam. Asperiores optio ad ipsum corporis consequuntur esse accusamus necessitatibus autem non labore possimus animi minima aspernatur fugit obcaecati eum, doloremque temporibus corrupti, cumque quae nostrum. Laborum iste accusamus voluptatum numquam? Possimus temporibus rem fugit facere atque ipsa ex obcaecati maiores quibusdam fuga ullam vitae inventore officia impedit vero, esse quisquam magnam eum a magni distinctio consectetur aliquam? Necessitatibus, est tempore? Facilis, atque? Sint magnam natus accusamus veritatis, nisi facere quaerat illo similique suscipit fuga dicta inventore placeat iusto sequi optio debitis maxime maiores nesciunt incidunt! Quae, earum!",
+                  kategori: "Kategori",
+               },
+               {
+              	judul: "Judul Artikel 2",
+                  img: "https://images.unsplash.com/photo-1565895405138-6c3a1555da6a",
+                  isi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem repellendus rem quam. Asperiores optio ad ipsum corporis consequuntur esse accusamus necessitatibus autem non labore possimus animi minima aspernatur fugit obcaecati eum, doloremque temporibus corrupti, cumque quae nostrum. Laborum iste accusamus voluptatum numquam? Possimus temporibus rem fugit facere atque ipsa ex obcaecati maiores quibusdam fuga ullam vitae inventore officia impedit vero, esse quisquam magnam eum a magni distinctio consectetur aliquam? Necessitatibus, est tempore? Facilis, atque? Sint magnam natus accusamus veritatis, nisi facere quaerat illo similique suscipit fuga dicta inventore placeat iusto sequi optio debitis maxime maiores nesciunt incidunt! Quae, earum!",
+                  kategori: "Kategori",
+               },
+               {
+              	judul: "Judul Artikel 3",
+                  img: "https://images.unsplash.com/photo-1565895405138-6c3a1555da6a",
+                  isi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem repellendus rem quam. Asperiores optio ad ipsum corporis consequuntur esse accusamus necessitatibus autem non labore possimus animi minima aspernatur fugit obcaecati eum, doloremque temporibus corrupti, cumque quae nostrum. Laborum iste accusamus voluptatum numquam? Possimus temporibus rem fugit facere atque ipsa ex obcaecati maiores quibusdam fuga ullam vitae inventore officia impedit vero, esse quisquam magnam eum a magni distinctio consectetur aliquam? Necessitatibus, est tempore? Facilis, atque? Sint magnam natus accusamus veritatis, nisi facere quaerat illo similique suscipit fuga dicta inventore placeat iusto sequi optio debitis maxime maiores nesciunt incidunt! Quae, earum!",
+                  kategori: "Kategori",
+               },
+               {
+              	judul: "Judul Artikel 4",
+                  img: "https://images.unsplash.com/photo-1565895405138-6c3a1555da6a",
+                  isi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem repellendus rem quam. Asperiores optio ad ipsum corporis consequuntur esse accusamus necessitatibus autem non labore possimus animi minima aspernatur fugit obcaecati eum, doloremque temporibus corrupti, cumque quae nostrum. Laborum iste accusamus voluptatum numquam? Possimus temporibus rem fugit facere atque ipsa ex obcaecati maiores quibusdam fuga ullam vitae inventore officia impedit vero, esse quisquam magnam eum a magni distinctio consectetur aliquam? Necessitatibus, est tempore? Facilis, atque? Sint magnam natus accusamus veritatis, nisi facere quaerat illo similique suscipit fuga dicta inventore placeat iusto sequi optio debitis maxime maiores nesciunt incidunt! Quae, earum!",
+                  kategori: "Kategori",
+               },
+               {
+              	judul: "Judul Artikel 5",
+                  img: "https://images.unsplash.com/photo-1565895405138-6c3a1555da6a",
+                  isi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem repellendus rem quam. Asperiores optio ad ipsum corporis consequuntur esse accusamus necessitatibus autem non labore possimus animi minima aspernatur fugit obcaecati eum, doloremque temporibus corrupti, cumque quae nostrum. Laborum iste accusamus voluptatum numquam? Possimus temporibus rem fugit facere atque ipsa ex obcaecati maiores quibusdam fuga ullam vitae inventore officia impedit vero, esse quisquam magnam eum a magni distinctio consectetur aliquam? Necessitatibus, est tempore? Facilis, atque? Sint magnam natus accusamus veritatis, nisi facere quaerat illo similique suscipit fuga dicta inventore placeat iusto sequi optio debitis maxime maiores nesciunt incidunt! Quae, earum!",
+                  kategori: "Kategori",
+               },
+               {
+              	judul: "Judul Artikel 6",
+                  img: "https://images.unsplash.com/photo-1565895405138-6c3a1555da6a",
+                  isi: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem repellendus rem quam. Asperiores optio ad ipsum corporis consequuntur esse accusamus necessitatibus autem non labore possimus animi minima aspernatur fugit obcaecati eum, doloremque temporibus corrupti, cumque quae nostrum. Laborum iste accusamus voluptatum numquam? Possimus temporibus rem fugit facere atque ipsa ex obcaecati maiores quibusdam fuga ullam vitae inventore officia impedit vero, esse quisquam magnam eum a magni distinctio consectetur aliquam? Necessitatibus, est tempore? Facilis, atque? Sint magnam natus accusamus veritatis, nisi facere quaerat illo similique suscipit fuga dicta inventore placeat iusto sequi optio debitis maxime maiores nesciunt incidunt! Quae, earum!",
+                  kategori: "Kategori",
+               },
+               
+];
+          
+      	let listCardArticle = document.getElementById("list-card-article");
+          
+          let startCardList = 0;
+          let endCardList = 0;
+          let showCardAmount = 3;
+          
+          function articleList(showNumber){
+          
+          if (articles.length - showNumber >= showCardAmount){
+          	endCardList = showNumber + showCardAmount;
+}
+          else if (articles.length - showNumber > 0){
+          	endCardList = articles.length;
+}
+          else {
+          	return alert("Semua Artikel Telah Ditampilkan");
+}
+          
+          
+          for (let i=showNumber; i<endCardList; i++){
+          	
+              let article = document.createElement("div");
+              article.id = "article";
+              article.innerHTML = `
+                   <h2 class="card-article-header mt-4">
+                   	${articles[i].judul}
+                   </h2>
+                   <img class="card-article-thumbnail" src="${articles[i].img}" style="height: 400px; width: 868px;"/>
+                   <div class="card-article-body">
+                   	${articles[i].isi}
+                   </div>
+                   <div class="card-article-footer">
+                   <span>
+                   	<strong>${articles[i].kategori}</strong>
+                   	</span>
+                   </div>
+`;
+              listCardArticle.appendChild(article);
+              
+}
+          startCardList += showCardAmount;
+}
+
+          window.onload(articleList(startCardList));
+          
+          
+          
+      </script>
+
+  </body>
+</html>
