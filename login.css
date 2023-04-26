@@ -65,8 +65,8 @@ body {
   .half .btn {
     height: 60px;
     background-color: #FA9884;
-    padding-left: 50px;
-    padding-right: 50px; 
+    /* padding-left: 150px;
+    padding-right: 150px;  */
     border: none;
     border-radius: 100px;
   }
@@ -83,4 +83,18 @@ body {
 
   .half .forgot-pass:hover{
     color: #FF5B39;
+  }
+
+  .social .btn {
+    height: 50px;
+    color: black;
+    background-color: #F8FAFC;
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+    font-size: medium;
+  }
+
+  .social .btn:hover {
+    background-color: #66BEFE;
+    border: none;
   }
