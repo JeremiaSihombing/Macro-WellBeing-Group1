@@ -10,3 +10,15 @@ function contoh() {
   });
 }
 
+function daftar() {
+  swal({
+    title: "Berhasil!",
+
+    text: "Pesan telah dikirim",
+
+    icon: "success",
+
+    button: true,
+  });
+}
+
