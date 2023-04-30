@@ -58,7 +58,7 @@
     </div>
     <div class="p-2 w-100 w-md-50" data-aos="fade-up-left" data-aos-duration="1000">
       <p style="font-size: 32px; font-weight: 800; text-align: left; ">${articles[i].judul}</p>
-      <p class="d-none d-md-block" style="font-size: 18px; text-align: left; font-weight: 100;">${articles[i].isi}</p>
+      <p class="d-none d-md-block isi-artikel" style="font-size: 18px; font-weight: 100;">${articles[i].isi}</p>
       <span><a href="artikel.html">Baca Selengkapnya</a></span>
     </div>  
   </div>

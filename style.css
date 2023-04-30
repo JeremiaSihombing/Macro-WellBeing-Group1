@@ -261,7 +261,6 @@ color: black;
   justify-content: center;
   margin-top: 65px;
 }
-
 .artikel-lainnya button {
   border: none;
   padding: 20px;
@@ -269,4 +268,9 @@ color: black;
   font-weight: 600;
   background-color: #17ca9c;
   color: white;
+}
+
+/* justify */
+.isi-layanan, .isi-artikel, .fitur-detail {
+  text-align: justify;
 }
