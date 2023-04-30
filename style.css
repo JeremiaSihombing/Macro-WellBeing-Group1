@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap');
+
 *{
 
-  font-family: 'Montserrat', sans-serif;
+      font-family: 'Poppins', sans-serif;
+
+
   scroll-behavior: smooth;
   
 }
-body{
-  background-color: #fff;
-}
+
 
 
 
@@ -39,53 +41,67 @@ body{
   bottom: 50px;
   justify-content: end;
 }
-
-#hero {
-  display: flex;
-  position: relative;
-  margin: 0 40px;
-  justify-content: center;
-  padding-top: 66px;
-  gap: 86px;
+.slider {
+    margin-bottom: 30px;
+    position: relative;
+  }
+.slider .owl-item.active.center .slider-card {
+    transform: scale(1.15);
+    opacity: 1;
+    background: #e1f0f8;
+    background: -webkit-linear-gradient(to bottom, #F0F3FA, #FDF8E3);
+    background: linear-gradient(to bottom, #F0F3FA, #FDF8E3);
+    color: black;
+}
+.card-img-top {
+    height: 270px;
+}
+.slider-card {
+    background: #fff;
+    padding: 0px 0px;
+    height: 80vh;
+    margin: 50px 15px 90px 15px;
+    box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+.owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+}
+.owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+}
+.owl-dots {
+    text-align: center;
+}
+.owl-dots .owl-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: #ccc !important;
+    margin-left: 3px;
+    margin-right: 3px;
+    outline: none;
+}
+.owl-dots .owl-dot.active {
+    background: #f44336 !important;
 }
 
-.info, .medic {
-  background-color: #fa9884;
+.sizeImg {
+    width: 99%;
 }
 
-.education, .emergence {
-  background-color: #ffe5ca;
-}
-
-.info, .medic, .education {
-  margin-right: 20px;
-}
-
-#hero div {
-  width: 289px;
-  height: 240px;
-  border-radius: 20px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#hero div span {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  padding-bottom: 12px;
-}
-
-#hero div img {
-  width: 140px;
-  height: 140px;
-}
 @media screen and (max-width: 768px){
   #hero-container {
     border-radius: 0;
@@ -129,13 +145,14 @@ a {
 
 
 #article h1{
-  padding-top: 96px;
+  margin-top: 107px;
+  padding-top: 97px;
   justify-content: center;
   text-align: center;
 }
 
 .btn1{
- background-color: #fa9884 ;
+ background-color: #17ca9c ;
  border: none;
  font-size: 16;
  font-weight: 400;
