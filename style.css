@@ -31,16 +31,7 @@
   padding-top: 96px;
 }
 
-#hero-container span {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 78px;
-  position: relative;
-  bottom: 50px;
-  justify-content: end;
-}
+
 .slider {
     margin-bottom: 30px;
     position: relative;
@@ -95,7 +86,7 @@
     outline: none;
 }
 .owl-dots .owl-dot.active {
-    background: #f44336 !important;
+    background: #17ca9c !important;
 }
 
 .sizeImg {
