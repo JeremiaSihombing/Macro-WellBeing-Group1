@@ -236,7 +236,7 @@ color: black;
   }
   
   .fitur {
-    display; block;
+    display: block;
     margin: 0;
     border-radius: none;
   }
@@ -255,3 +255,18 @@ color: black;
   }
 }
 
+/* Tombol Artikel Lainnya */
+.artikel-lainnya {
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+.artikel-lainnya button {
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: #17ca9c;
+  color: white;
+}

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#FA9884">
-    <meta name="msapplication-navbutton-color" content="#FA9884">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#FA9884">
+    <meta name="theme-color" content="#17ca9c">
+    <meta name="msapplication-navbutton-color" content="#17ca9c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#17ca9c">
     <title>Well Being</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6ff988c96b.js" crossorigin="anonymous"></script>
@@ -134,52 +134,24 @@
         </div>
 </div>
 
-<div id="article" class="container-fluid" style="background-color: #e1f0f8;" >
+
+<div id="article" class="container-fluid" style="background-color: #e1f0f8; padding-bottom: 107px" >
   <h1 style="padding-bottom: 92px;" data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1000"><strong>Informasi dan Artikel Kesehatan</strong></h1>
-
-<div class="d-flex flex-column flex-md-row justify-content-center mx-md-5 gap-2 gap-md-5 mb-5 mb-md-0"  >
-    <div class="p-2">
-      <img class="w-100 w-md-50" src="images/article1.png" alt="" data-aos="fade-up-right" data-aos-duration="1000">
-    </div>
-    <div class="p-2 w-100 w-md-50" data-aos="fade-up-left" data-aos-duration="1000">
-      <p style="font-size: 32px; font-weight: 800; text-align: left; ">Pentingnya diet bagi Kesehatan</p>
-      <p class="d-none d-md-block" style="font-size: 18px; text-align: left; font-weight: 100;">Diet seimbang penting karena organ dan jaringan membutuhkan nutrisi yang tepat untuk bekerja secara efektif. Tubuh menggunakan kalori dari makanan untuk beraktivitas, seperti berjalan, berpikir, bernapas, dan fungsi penting lain.</p>
-      <span><a href="artikel.html">Baca Selengkapnya</a></span>
-    </div>  
+<div class="artikel-container"></div>
+<div class="artikel-lainnya">
+<button onClick="articleList(startCardList)">Artikel Lainnya</button>
+</div>
   </div>
 
-  <div class="d-flex flex-column flex-md-row justify-content-center mx-md-5 gap-2 gap-md-5 mb-5 mb-md-0"  >
-    <div class="p-2">
-      <img class="w-100 w-md-50" src="images/article2.png" alt="" data-aos="fade-up-right" data-aos-duration="1000">
-    </div>
-    <div class="p-2 w-100 w-md-50" data-aos="fade-up-left" data-aos-duration="1000">
-      <p style="font-size: 32px; font-weight: 800; text-align: left; ">Makanan untuk menaikkan Berat Badan</p>
-      <p class="d-none d-md-block" style="font-size: 18px; text-align: left; font-weight: 100;">Menaikkan berat badan yang cepat tidak dapat dilakukan dengan cara mengkonsumsi makanan dalam porsi berlebihan. Kamu juga harus memperhatikan asupan makanan yang cepat menambah berat badan dan memiliki kandungan gizi di dalamnya.</p>
-      <span><a href="">Baca Selengkapnya</a></span>
-    </div>  
-  </div>
-
-  <div class="d-flex flex-column flex-md-row justify-content-center mx-md-5 gap-2 gap-md-5 mb-5 mb-md-0">
-    <div class="p-2">
-      <img class="w-100 w-md-50" src="images/article3.png" alt="" data-aos="fade-up-right" data-aos-duration="1000">
-    </div>
-    <div class="p-2 w-100 w-md-50" data-aos="fade-up-left" data-aos-duration="1000">
-      <p style="font-size: 32px; font-weight: 800; text-align: left; ">Pentingnya Asupan Gizi Seimbang Di Masa Pandemi Corona</p>
-      <p class="d-none d-md-block" style="font-size: 18px; text-align: left; font-weight: 100;">Dimasa pandemi global Covid-19 tengah melanda lebih dari 200 negara, termasuk Indonesia. Di tengah PSBB dan physical distancing, para ahli mengingatkan untuk menjaga kondisi gizi terutama kepada anak-anak. Berdasarkan data, anak-anak memang memiliki prevalensi minim untuk terinfeksi Covid-19.</p>
-      <span><a href="">Baca Selengkapnya</a></span>
-    </div>
-    
-  </div>
-
-  <div id="fitur" style="background-color: #fdfdfd;"  >
-    <h1 style="padding-bottom: 92px; " data-aos="fade-down" data-aos-duration="1000"><strong>Fitur</strong></h1>
+  <div class="p-2 mb-5" style="background-color: #fdfdfd;margin-top: 90px"  >
+    <h1 class="text-center" style="padding-bottom: 92px; " data-aos="fade-down" data-aos-duration="1000"><strong>Fitur</strong></h1>
 
     
   <div class="d-flex flex-column flex-md-row justify-content-center mx-md-5 gap-5 fitur-container">
-    <div class="p-2"data-aos="fade-right" data-aos-duration="1000">
-      <img class="img-fitur" src="images/fitur1.png" alt="" style="border-radius: 20px; ">
+    <div class="p-2" data-aos="fade-right" data-aos-duration="1000">
+      <img class="img-fitur" src="images/fitur1.png" alt="" style="border-radius: 20px; "/>
     </div>
     <div class="p-2 fitur" data-aos="fade-left" data-aos-duration="1000">
       <p class="fitur-detail" style="font-size: 17px; font-weight: 100;">Kalkulator BMI dapat memberikan informasi apakah berat badan Anda tergolong ideal atau normal, kurang, berlebih, atau obesitas.</p>
@@ -188,13 +160,13 @@
   </div>
     <br>
   <div class="d-flex flex-column flex-md-row justify-content-center mx-md-5 gap-5 fitur-container" >
-    <div class="p-2 fitur"data-aos="fade-right" data-aos-duration="1000">
+    <div class="p-2 fitur" data-aos="fade-right" data-aos-duration="1000">
       <p class="fitur-detail" style="font-size: 17px; font-weight: 100;">Membantu menghitung kebutuhan kalori harian Anda untuk menjaga kesehatan tubuh dan menjaga berat badan ideal. Fitur ini bisa digunakan sebagai acuan berapa banyak makanan yang harus dikonsumsi per hari.</p>
       <span><a href="kalkulatorkalori.html">Cek Kebutuhan Kalori Disini!</a></span>
     </div>
-    <div class="p-2 "data-aos="fade-left" data-aos-duration="1000">
+    <div class="p-2" data-aos="fade-left" data-aos-duration="1000">
       
-      <img class="img-fitur" src="images/fitur2.png" alt="" style="border-radius: 20px; ">
+      <img class="img-fitur" src="images/fitur2.png" alt="" style="border-radius: 20px; "/>
       
     </div>  
   </div>
@@ -202,13 +174,15 @@
     
   <div class="d-flex flex-column flex-md-row justify-content-center mx-md-5 gap-5 fitur-container"  >
     <div class="p-2" data-aos="fade-right" data-aos-duration="1000">
-      <img class="img-fitur" src="images/fitur3.png" alt="" style="border-radius: 20px; ">
+      <img class="img-fitur" src="images/fitur3.png" alt="" style="border-radius: 20px; "/>
     </div>
-    <div class="p-2 " data-aos="fade-left" data-aos-duration="1000">
+    <div class="p-2 fitur" data-aos="fade-left" data-aos-duration="1000">
       <p class="fitur-detail" style="font-size: 17px; font-weight: 100;">Membantu Anda mengetahui rata-rata berat badan ideal berdasarkan usia dan rumus BMI. Hal ini penting untuk bisa mengetahui dan mengontrol kesehatan Tubuh kita. .</p>
       <span><a href="kalkulatorberatideal.html">Hitung Berat Badan Ideal</a></span>
     </div>  
   </div>
+  </div>
+
 
   <div id="Kontak" style="background-color: #e1f0f8; padding-bottom: 50px;"  >
     <h1 style=""></h1>
@@ -217,7 +191,7 @@
       <div class="p-2 d-none d-md-block" data-aos="fade-down" data-aos-duration="1000">
         <img src="images/contactus.png" alt="" style="width: 100%; border-radius: 20px; ">
       </div>
-      <div class="p-2 "data-aos="fade-up" data-aos-duration="1000">
+      <div class="p-2" data-aos="fade-up" data-aos-duration="1000">
         <p style="font-size: 54px; font-weight: 700; text-align: center; ">Kontak <span style="color: #17ca9c;">Kami</span> </p>
         <p style="font-size: 18px; text-align: left; font-weight: 500;">Silahkan Kontak kami,
           Kami siap membantu</p>
@@ -283,4 +257,5 @@
     <script src="owl.carousel.min.js"></script>
     <script src="carousel.js"></script>
     <script src="script.js"></script>
+    <script src="list_artikel.js"></script>
 </html>
