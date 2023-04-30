@@ -44,6 +44,7 @@ a:hover {
 
 .jumbotron {
     height: 470px;
+    border: 1px solid #D29F06;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
