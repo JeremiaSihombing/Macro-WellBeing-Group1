@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
   </head>
   <body>
@@ -45,12 +46,18 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#Kontak">Kontak</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="daftar.html">Daftar</a>
+            <li class="nav-item" style="background-color: #17ca9c; border-radius: 10px;   ">
+               <a class="nav-link active" style="color: #ffff; ;"  aria-current="page" href="daftar.html">Daftar</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="login.html">Masuk</a>
+            <br>
+            <li class="nav-item" style="background-color: #17ca9c; border-radius: 10px;   ">
+               <a class="nav-link active" style="color: #ffff; ;"  aria-current="page" href="login.html">Masuk</a>
             </li>
+            
+            
+         
+         
+         
           </ul>
         </div>
         </div>
@@ -82,7 +89,9 @@
 
     </div>
     
-     <div class="container">
+     <div class="container" class="mb-4" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
             <div class="slider">
                 <div class="owl-carousel">
                     <div class="slider-card">
@@ -232,8 +241,9 @@
             </ul>
           </div>
           <br>
-          <button type="button" class="btn1" style="width: 473px; height: 62px;">
-          <span><a href="">Kirim</a></span></button>
+  
+          <button class="btn1" onclick="contoh()" style="width: 473px; height: 62px; color: #fdfdfd;">Kirim</button>
+
 
         
       </div>   
@@ -272,4 +282,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
     <script src="owl.carousel.min.js"></script>
     <script src="carousel.js"></script>
+    <script src="script.js"></script>
 </html>
