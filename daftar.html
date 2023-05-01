@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#FA9884">
-    <meta name="msapplication-navbutton-color" content="#FA9884">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#FA9884">
+    <meta name="theme-color" content="#17ca9c">
+    <meta name="msapplication-navbutton-color" content="#17ca9c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#17ca9c">
     <title>Login - Well Being</title>
     <link rel="stylesheet" href="login.css">
     <script src="https://kit.fontawesome.com/6ff988c96b.js" crossorigin="anonymous"></script>
@@ -25,9 +25,9 @@
             <div class="">
                 <h1 style="font-weight: bold; color: #fff;" data-aos="fade-right" data-aos-duration="1000">Selamat<br>Datang Di<br>Well Being</h1>
                 <div>
-                    <img class="img-fluid" src="images/consultationvector.png" alt=""data-aos="fade-right" data-aos-duration="1000">>
+                    <img class="img-fluid" src="images/consultationvector.png" alt="" data-aos="fade-right" data-aos-duration="1000"/>
                 </div>
-             <p style="font-weight: 600; font-size: 20px; color: #fff; font-family: 'poppins', sans-serif;"data-aos="fade-left" data-aos-duration="1000">"Mari mulai hidup sehat dengan<br>memperhatikan gizi dan juga<br>kalori harian anda."</p>
+             <p style="font-weight: 600; font-size: 20px; color: #fff; font-family: 'poppins', sans-serif;" data-aos="fade-left" data-aos-duration="1000">"Mari mulai hidup sehat dengan<br>memperhatikan gizi dan juga<br>kalori harian anda."</p>
             </div>
         </div>
         <div class="contents order-1 order-md-2">
@@ -35,27 +35,27 @@
             <div class="row align-items-center justify-content-center">
               <div class="col-md-7">
                <img src="images/logomacro.png" style="width: 400px; " class="mx-1 pb-xl-4" alt="" data-aos="fade-up" data-aos-duration="1000">
-                <form action="login.html">
+                <form class="daftar">
                     <div class="form-group first mb-2" data-aos="fade-right" data-aos-duration="1000">
                         <label for="Nama Lengkap"><strong>Nama Lengkap</strong></label>
-                        <input type="text" class="form-control" placeholder="Nama Lengkap" id="Email" required>
+                        <input type="text" class="form-control" placeholder="Nama Lengkap" id="nama" name="nama" required>
                       </div>
-                  <div class="form-group first mb-2"data-aos="fade-left" data-aos-duration="1000">
+                  <div class="form-group first mb-2" data-aos="fade-left" data-aos-duration="1000">
                     <label for="Email"><strong>Email</strong></label>
-                    <input type="text" class="form-control" placeholder="your-email@gmail.com" id="Email" required>
+                    <input type="email" class="form-control" placeholder="your-email@gmail.com" id="email" name="email" required>
                   </div>
-                  <div class="form-group last mb-2"data-aos="fade-right" data-aos-duration="1000">
+                  <div class="form-group last mb-2" data-aos="fade-right" data-aos-duration="1000">
                     <label for="password"><strong>Password</strong></label>
-                    <input type="password" class="form-control" placeholder="Your Password" id="password" required>
+                    <input type="password" class="form-control" placeholder="Your Password" id="password" name="password" required>
                   </div>
                   <div class="d-flex mb-2 align-items-center" data-aos="fade-up" data-aos-duration="1000">
                     <span class="ml-auto">Sudah punya akun? <a href="login.html" class="forgot-pass">Masuk</a></span>
                   </div>
-                 <button class="btn  btn-lg btn-primary col-12" onclick="daftar()" style="color: #fff; text-decoration: none;"data-aos="flip-up" data-aos-duration="1000">Daftar</button>
+                 <button type="submit" class="btn  btn-lg btn-primary col-12" onclick="daftar()" style="color: #fff; text-decoration: none;" data-aos="flip-up" data-aos-duration="1000">Daftar</button>
                 </form>
                  
                 <hr class="my-4">
-                <div class="social text-center"data-aos="fade-up" data-aos-duration="1000">
+                <div class="social text-center" data-aos="fade-up" data-aos-duration="1000">
                   <a class="" href=""><button class="btn btn-block btn-lg btn-primary col-10 mb-2"><i class="fa fa-facebook"></i> Daftar dengan Facebook</button></a>
                   <a class="" href=""><button class="btn btn-block btn-lg btn-primary col-10 mb-2"><i class="fa fa-google"></i> Daftar dengan Google</button></a>
                   <a class="" href=""><button class="btn btn-block btn-lg btn-primary col-10 mb-2"><i class="fa fa-twitter"></i> Daftar dengan Twitter</button></a>
@@ -67,6 +67,36 @@
     
         
       </div>
+      
+      <script>
+        const daftar = document.querySelector('.daftar');
+
+daftar.addEventListener('submit', (e)=>{
+  e.preventDefault();
+  const nama = daftar.elements.nama.value;
+  const email = daftar.elements.email.value;
+  const password = daftar.elements.password.value;
+  localStorage.setItem('nama', nama);
+  localStorage.setItem('email', email);
+  localStorage.setItem('password', password);
+  localStorage.setItem('sudah_login', 'true');
+  
+  swal({
+    title: "Berhasil!",
+
+    text: "Selamat " + nama + ". Anda akan dialihkan ke halaman Dashboard dalam 2 detik.",
+
+    icon: "success",
+
+    button: true,
+  });
+  setTimeout(()=>{
+  window.location.replace('dashboard.html');
+}, 2000);
+});
+
+      </script>
+      
 </body>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

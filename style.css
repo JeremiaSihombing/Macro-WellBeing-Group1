@@ -150,8 +150,7 @@ a {
  width: 172px;
  height: 60px;
  border-radius: 100px;
- align-items: center;
-
+ margin: auto;
 }
 
 .btn1 a{

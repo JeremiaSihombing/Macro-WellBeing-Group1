@@ -22,7 +22,7 @@
   <body>
 
   <section id="navbar"  class="sticky-top" >
-    <nav class="navbar navbar-expand-lg " style="background-color: #fdfdfd" >
+        <nav class="navbar navbar-expand-lg " style="background-color: #fdfdfd" >
       <div class="container-fluid " >
         <a class="navbar-brand px-lg-4" style="font-weight: 700;" href="index.html" >
         <img src="images/logomacro.png" style="width:300px" alt=""></a>
@@ -46,14 +46,23 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#Kontak">Kontak</a>
             </li>
-            <li class="nav-item" style="background-color: #17ca9c; border-radius: 10px;   ">
+            <li class="p-2 nav-item sudahlogin" style="background-color: #17ca9c; border-radius: 10px;   ">
+               <a class="nav-link active" style="color: #ffff; ;"  aria-current="page" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="p-2 nav-item belumlogin" style="background-color: #17ca9c; border-radius: 10px;   ">
                <a class="nav-link active" style="color: #ffff; ;"  aria-current="page" href="daftar.html">Daftar</a>
             </li>
             <br>
-            <li class="nav-item" style="background-color: #17ca9c; border-radius: 10px;   ">
+            <li class="p-2 nav-item belumlogin" style="background-color: #17ca9c; border-radius: 10px;   ">
                <a class="nav-link active" style="color: #ffff; ;"  aria-current="page" href="login.html">Masuk</a>
             </li>
-            
+            <li class="nav-item sudahlogin text-center" style="background-color: #17ca9c; border-radius: 10px;   ">
+               <a class="nav-link active nama" style="color: #ffff; ;"  aria-current="page" href="#"></a>
+            </li>
+            <div class="p-2 position-absolute menu-profil" style="background-color: #17ca9c;border-radius: 10px; margin-top: 4px;bottom: -52px;left: auto;width: auto;">
+                 <a class="d-block" href="">Profile</a>
+                 <a class="d-block keluar" href="">Keluar</a>
+             </div>
             
          
          
@@ -73,14 +82,12 @@
   
         <p style="font-size: 45px; font-weight: 700; padding-top: 75px; text-align: center; ">Hal yang paling berharga adalah kesehatan </p>
         <br>
-        <button type="button" class="btn1" style="font-weight: 300; color: #fdfdfd;" data-aos="fade-up" data-aos-duration="1000"><span
+        <button type="button" class="btn1 belumlogin" style="font-weight: 300; color: #fdfdfd;" data-aos="fade-up" data-aos-duration="1000"><span
          > <a href="#layanan">Masuk</a> </span></button>
+         <p class="sudahlogin selamat-datang" style="font-size: 45px; font-weight: 700; text-align: center; color: #17ca9c"></p>
 
       </div>  
     </div>
-
-  <div>
-
   </section>
     <div id="layanan" data-aos="fade-down"
      data-aos-easing="linear"
@@ -246,6 +253,7 @@
 </footer>
 </div>
   </body>
+  
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -256,4 +264,6 @@
     <script src="carousel.js"></script>
     <script src="script.js"></script>
     <script src="list_artikel.js"></script>
+    <script src="keluar_akun.js"></script>
+    <script src="navigasi.js"></script>
 </html>
