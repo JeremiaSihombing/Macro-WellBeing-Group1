@@ -252,8 +252,24 @@
           </div>
 </footer>
 </div>
+
+<script>
+    if (localStorage.getItem("pesan")) {
+      swal({
+        title: localStorage.getItem("pesan"),
+        
+        text: "Terima kasih banyak sudah menggunakan layanan kami",
+
+        icon: "success",
+
+        button: true,
+      });
+      localStorage.removeItem("pesan");
+    }
+</script>
+
   </body>
-  
+ 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -266,4 +282,5 @@
     <script src="list_artikel.js"></script>
     <script src="keluar_akun.js"></script>
     <script src="navigasi.js"></script>
+    
 </html>
