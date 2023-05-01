@@ -79,9 +79,19 @@
   z-index: 1;
 }
 
+
+/* Navbar Edit */
+
+.navbar ul li a {
+  font-weight: 500;
+}
+
+/* Navbar Edit End */
+
+
 /* Navbar Hover */
 
-.navbar ul li a:hover {
+.navbar ul li a {
   color: #17ca9c;
 }
 
