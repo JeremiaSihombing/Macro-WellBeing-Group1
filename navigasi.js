@@ -6,7 +6,7 @@ if (localStorage.getItem('sudah_login')){
           e.style.display = 'none';
         });
         document.querySelector('.nama').textContent = localStorage.getItem('nama');
-        document.querySelector('.selamat-datang').textContent = 'Haloo ' + localStorage.getItem('nama') + '!';
+        document.querySelector('.selamat-datang').textContent = 'Halo ' + localStorage.getItem('nama') + '!';
       }
       else {
         document.querySelectorAll('.sudahlogin').forEach((e)=>{
