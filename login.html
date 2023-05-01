@@ -84,6 +84,23 @@ masuk.addEventListener('submit', (e)=>{
   window.location.replace('dashboard.html');
 }, 2000);
 });
+  
+  
+  if (localStorage.getItem('pesan')){
+    swal({
+    title: "Ups!",
+
+    text: localStorage.getItem('pesan'),
+
+    icon: "info",
+
+    button: true,
+  });
+  localStorage.removeItem('pesan')
+  }
+  
+    </script>
+
 
       </script>
       
