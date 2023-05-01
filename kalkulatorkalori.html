@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#FA9884">
-    <meta name="msapplication-navbutton-color" content="#FA9884">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#FA9884">
+    <meta name="theme-color" content="#17ca9c">
+    <meta name="msapplication-navbutton-color" content="#17ca9c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#17ca9c">
     <title>Login - Well Being</title>
     <link rel="stylesheet" href="bmi.css">
     <script src="https://kit.fontawesome.com/6ff988c96b.js" crossorigin="anonymous"></script>
@@ -63,7 +63,9 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#Kontak">Kontak</a>
             </li>
-       
+            <li class="p-2 nav-item sudahlogin" style="background-color: #17ca9c; border-radius: 10px;   ">
+               <a class="nav-link active" style="color: #ffff;   ;"  aria-current="page" href="dashboard.html">Dashboard</a>
+            </li>
 
           <div class="d-flex gap-1"  >
             <li class="p-2 nav-item belumlogin" style="background-color: #17ca9c; border-radius: 10px;  ">
@@ -73,7 +75,16 @@
             <li class="p-2 nav-item belumlogin" style="background-color: #17ca9c; border-radius: 10px;   ">
                <a class="nav-link active" style="color: #ffff; ;"  aria-current="page" href="login.html">Masuk</a>
             </li>
-           
+            </div>
+            <li class="nav-item sudahlogin text-center" style="background-color: #17ca9c; border-radius: 10px; ">
+               <a class="nav-link active nama" style="color: #ffff; ;"  aria-current="page" href="#"></a>
+            </li>
+            <div class="p-2 position-absolute menu-profil" style="background-color: #17ca9c;border-radius: 10px; margin-top: 4px;bottom: -60px; ;width: auto; margin-left: 400px; ">
+                 <a class="d-block" href="" style="color: #ffff;text-decoration: none;">Profile</a>
+                 
+                 <a class="d-block keluar" href="" style="color: #ffff;text-decoration: none;" >Keluar</a>
+             </div>
+            
          
          
          
@@ -83,11 +94,10 @@
       </div>
     </nav>
 </section>
-
         <div id="Kalkulator">
           <h1 data-aos="fade-up" data-aos-duration="1000">Kalkulator Kalori</h1>
 
-          <img src="images/bmi2.png" data-aos="fade-right" data-aos-duration="1000" class="rounded mx-auto d-block"alt="test" style="width: 500px;" class="mx-lg-5" >
+          <img src="images/bmi2.png" data-aos="fade-right" data-aos-duration="1000" class="rounded mx-auto d-block" alt="test" style="width: 500px;" class="mx-lg-5" >
        <p class=" justify-content-center" style="text-align: justify; margin: 0 300px 0 300px;font-weight: 100; padding-top: 20px; font-size: 20px;" data-aos="fade-left" data-aos-duration="1000" >
        Membantu menghitung kebutuhan kalori harian Anda untuk menjaga kesehatan tubuh dan menjaga berat badan ideal. Fitur ini bisa digunakan sebagai acuan berapa banyak makanan yang harus dikonsumsi per hari.</p>      
        
@@ -115,6 +125,9 @@
             <i class="fa-brands fa-tiktok" style="color: #ffffff;margin-right: 25px;"></i>
           
         </div>
+
+<script src="keluar_akun.js"></script>
+<script src="navigasi.js"></script>
 
   </body>
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

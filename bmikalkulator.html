@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#FA9884">
-    <meta name="msapplication-navbutton-color" content="#FA9884">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#FA9884">
+    <meta name="theme-color" content="#17ca9c">
+    <meta name="msapplication-navbutton-color" content="#17ca9c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#17ca9c">
     <title>Login - Well Being</title>
     <link rel="stylesheet" href="bmi.css">
     <script src="https://kit.fontawesome.com/6ff988c96b.js" crossorigin="anonymous"></script>
@@ -37,7 +37,7 @@
 
     </style>
   <body>
-     <section id="navbar"  class="sticky-top" >
+    <section id="navbar"  class="sticky-top" >
         <nav class="navbar navbar-expand-lg " style="background-color: #fdfdfd" >
       <div class="container-fluid " style="align-items: center;"  >
         <a class="navbar-brand px-lg-4" style="font-weight: 700;" href="index.html" >
@@ -62,7 +62,9 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#Kontak">Kontak</a>
             </li>
-       
+            <li class="p-2 nav-item sudahlogin" style="background-color: #17ca9c; border-radius: 10px;   ">
+               <a class="nav-link active" style="color: #ffff;   ;"  aria-current="page" href="dashboard.html">Dashboard</a>
+            </li>
 
           <div class="d-flex gap-1"  >
             <li class="p-2 nav-item belumlogin" style="background-color: #17ca9c; border-radius: 10px;  ">
@@ -72,7 +74,16 @@
             <li class="p-2 nav-item belumlogin" style="background-color: #17ca9c; border-radius: 10px;   ">
                <a class="nav-link active" style="color: #ffff; ;"  aria-current="page" href="login.html">Masuk</a>
             </li>
-           
+            </div>
+            <li class="nav-item sudahlogin text-center" style="background-color: #17ca9c; border-radius: 10px; ">
+               <a class="nav-link active nama" style="color: #ffff; ;"  aria-current="page" href="#"></a>
+            </li>
+            <div class="p-2 position-absolute menu-profil" style="background-color: #17ca9c;border-radius: 10px; margin-top: 4px;bottom: -60px; ;width: auto; margin-left: 400px; ">
+                 <a class="d-block" href="" style="color: #ffff;text-decoration: none;">Profile</a>
+                 
+                 <a class="d-block keluar" href="" style="color: #ffff;text-decoration: none;" >Keluar</a>
+             </div>
+            
          
          
          
@@ -85,11 +96,11 @@
         <div id="Kalkulator">
           <h1 data-aos="fade-up" data-aos-duration="1000">Kalkulator BMI</h1>
 
-          <img src="images/bmi1.png" class="rounded mx-auto d-block"alt="test" style="width: 500px;" class="mx-lg-5" data-aos="fade-left" data-aos-duration="1000" >
+          <img src="images/bmi1.png" class="rounded mx-auto d-block" alt="test" style="width: 500px;" class="mx-lg-5" data-aos="fade-left" data-aos-duration="1000" >
             <p class=" justify-content-center" style="text-align: justify; margin: 0 300px 0 300px;font-weight: 100; padding-top: 20px; font-size: 20px;" data-aos="fade-right" data-aos-duration="1000" >
            Kalkulator BMI dapat memberikan informasi apakah berat badan Anda tergolong ideal atau normal, kurang, berlebih, atau obesitas. </p>
 
-     <div id="fp-code" data-calc="bmi" data-lang="en" data-unit="metric" data-bg-color="#F7F7F7"  data-alt-bg-color="#FFFFFF" data-txt-color="#333333" data-alt-txt-color="#FFFFFF" data-pri-color="#17CA9C" data-sec-color="#17CA9C"data-aos="fade-up" data-aos-duration="2000"><span class="fp-copyright">Powered by <a href="https://www.foodpal-app.com/en/calculators/bmi-calculator">FoodPal</a></span></div><script src="https://code.foodpal-app.com/external/calculator.js"  async></script>
+     <div id="fp-code" data-calc="bmi" data-lang="en" data-unit="metric" data-bg-color="#F7F7F7"  data-alt-bg-color="#FFFFFF" data-txt-color="#333333" data-alt-txt-color="#FFFFFF" data-pri-color="#17CA9C" data-sec-color="#17CA9C" data-aos="fade-up" data-aos-duration="2000"><span class="fp-copyright">Powered by <a href="https://www.foodpal-app.com/en/calculators/bmi-calculator">FoodPal</a></span></div><script src="https://code.foodpal-app.com/external/calculator.js"  async></script>
 
   <div id="footer"  style="padding-top: 120px;">
     <footer class="text-center text-lg-start  text-muted" style="background-color: black;">
@@ -112,6 +123,9 @@
             <i class="fa-brands fa-tiktok" style="color: #ffffff;margin-right: 25px;"></i>
           
         </div>
+<script src="keluar_akun.js"></script>
+<script src="navigasi.js"></script>
+
 
   </body>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

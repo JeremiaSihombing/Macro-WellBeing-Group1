@@ -1,3 +1,16 @@
+document.querySelector('.menu-profil').style.display = 'none';
+      let tombol_profil = false;
+      document.querySelector('.nama').addEventListener('click', (e)=>{
+        e.preventDefault();
+        tombol_profil = !tombol_profil;
+        if (tombol_profil === true){
+          document.querySelector('.menu-profil').style.display = 'block';
+        }
+        else {
+          document.querySelector('.menu-profil').style.display = 'none';
+        }
+      });
+
 if (localStorage.getItem('sudah_login')){
         document.querySelectorAll('.sudahlogin').forEach((e)=>{
           e.style.display = 'block';
@@ -17,16 +30,3 @@ if (localStorage.getItem('sudah_login')){
         });
         
       };
-     
-      document.querySelector('.menu-profil').style.display = 'none';
-      let tombol_profil = false;
-      document.querySelector('.nama').addEventListener('click', (e)=>{
-        e.preventDefault();
-        tombol_profil = !tombol_profil;
-        if (tombol_profil === true){
-          document.querySelector('.menu-profil').style.display = 'block';
-        }
-        else {
-          document.querySelector('.menu-profil').style.display = 'none';
-        }
-      });
