@@ -63,15 +63,15 @@
         <div class="top">
             <div class="row">
                 <div class="left col-9">
-                    <div class="jumbotron jumbotron-fluid  mt-4 mb-4" style="background-color: #17ca9c; border: #17ca9c;">
+                    <div class="jumbotron jumbotron-fluid  mt-4 mb-4" style="background-color: #e1f0f8; border: 1px solid #17ca9c;"data-aos="fade-up" data-aos-duration="1000">
                         <div class="container">
                             <h1 class="display-4">Fluid jumbotron</h1>
                             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
                         </div>
                     </div>
                 </div>
-                <div class="right col-3">
-                    <div class="card mt-4 rounded-4 " style="background-color: #17ca9c;">
+                <div class="right col-3" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="card mt-4 rounded-4 " style="background-color: #e1f0f8; border: 1px solid #17ca9c;">
                         <div class="card-body">
                             <span class="position-relative top-0 start-50 translate-middle badge rounded-4 bg-white text-black">
                                 <img src="images/konseling.png" alt="">
@@ -79,28 +79,28 @@
                             <div class="text-center">
                                 <h5 class="card-title">Konseling</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-danger rounded-5">Detail</a>
+                                <a href="#" class="btn  rounded-5" style="background-color: #17ca9c;">Detail</a>
                             </div>
                         </div>
                     </div>
-                    <div class="card mt-4 rounded-4 " style="background-color: #17ca9c;">
-                        <div class="card-body">
+                    <div class="card mt-4 rounded-4 " style="background-color: #e1f0f8; border: 1px solid #17ca9c;" >
+                        <div class="card-body" >
                             <span class="position-relative top-0 start-50 translate-middle badge rounded-4 bg-white text-black">
                                 <img src="images/kalori.png" alt="">
                             </span>
                             <div class="text-center">
                                 <h5 class="card-title">Cek kalori makanan</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-danger rounded-5">Detail</a>
+                               <a href="kalkulatorkalori.html" class="btn  rounded-5" style="background-color: #17ca9c;">Detail</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bottom mt-2">
+        <div class="bottom mt-2" data-aos="fade-down" data-aos-duration="1000">
             <div class="row d-flex justify-content-between mx-lg-1">
-                <div class="card col-3 mt-5 rounded-4 bg-warning">
+                <div class="card col-3 mt-5 rounded-4 " style="background-color: #e1f0f8; border: 1px solid #17ca9c;">
                     <div class="card-body">
                         <span class="position-relative top-0 start-50 translate-middle badge rounded-4 bg-white text-black">
                             <img src="images/bmi.png" alt="">
@@ -108,11 +108,11 @@
                         <div class="text-center">
                             <h5 class="card-title">Kalkulator BMI</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="bmikalkulator.html" class="btn btn-danger rounded-5">Detail</a>
+                            <a href="bmikalkulator.html" class="btn  rounded-5" style="background-color: #17ca9c;">Detail</a>
                         </div>
                     </div>
                 </div>
-                <div class="card col-3 mt-5 rounded-4 bg-warning">
+                <div class="card col-3 mt-5 rounded-4 " style="background-color: #e1f0f8; border: 1px solid #17ca9c;">
                     <div class="card-body">
                         <span class="position-relative top-0 start-50 translate-middle badge rounded-4 bg-white text-black">
                             <img src="images/makanan.png" alt="">
@@ -120,11 +120,11 @@
                         <div class="text-center">
                             <h5 class="card-title">Kalkulator Kalori</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="kalkulatorkalori.html" class="btn btn-danger rounded-5">Detail</a>
+                            <a href="kalkulatorkalori.html" class="btn  rounded-5" style="background-color: #17ca9c;">Detail</a>
                         </div>
                     </div>
                 </div>
-                <div class="card col-3 mt-5 rounded-4 bg-warning">
+                <div class="card col-3 mt-5 rounded-4 " style="background-color: #e1f0f8; border: 1px solid #17ca9c;">
                     <div class="card-body">
                         <span class="position-relative top-0 start-50 translate-middle badge rounded-4 bg-white text-black">
                             <img src="images/ideal.png" alt="">
@@ -132,7 +132,7 @@
                         <div class="text-center">
                             <h5 class="card-title">Kalkulator Berat Ideal</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="kalkulatorberatideal.html" class="btn btn-danger rounded-5">Detail</a>
+                           <a href="kalkulatorberatideal.html" class="btn  rounded-5" style="background-color: #17ca9c;">Detail</a>>
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,13 @@
 </section>
 
 
+   
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      AOS.init();
+    </script>
+     <script>
       if (localStorage.getItem('pesan')){
           swal({
           title: localStorage.getItem('pesan'),
@@ -155,5 +161,4 @@
       }
     </script>
     <script src='cek_login.js'></script>
-</body>
 </html>

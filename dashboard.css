@@ -10,6 +10,7 @@ body {
     scroll-behavior: smooth;
     background-color: #fff;
     height: 100vh;
+    font-weight: 400;
 }
 
 p {
