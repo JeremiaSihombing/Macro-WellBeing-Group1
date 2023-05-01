@@ -9,13 +9,13 @@ body {
     font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
     background-color: #fff;
-    height: 100vh;
-    font-weight: 400;
+ 
+   
 }
 
 p {
     color: black;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h1,
