@@ -42,7 +42,7 @@
   opacity: 1;
   background: #e1f0f8;
   background: -webkit-linear-gradient(to bottom, #F0F3FA, #FDF8E3);
-  background: linear-gradient(to bottom, #F0F3FA, #FDF8E3);
+  background: linear-gradient(to bottom, #F0F3FA, #defff7);
   color: black;
 }
 
