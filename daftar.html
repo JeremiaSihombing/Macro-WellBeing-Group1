@@ -80,6 +80,8 @@ daftar.addEventListener('submit', (e)=>{
   localStorage.setItem('email', email);
   localStorage.setItem('password', password);
   localStorage.setItem('sudah_login', 'true');
+  const pesan = "Selamat Datang " + nama + "!";
+  localStorage.setItem('pesan', pesan);
   
   swal({
     title: "Berhasil!",

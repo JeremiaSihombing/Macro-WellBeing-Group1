@@ -69,9 +69,10 @@ masuk.addEventListener('submit', (e)=>{
   const password = masuk.elements.password.value;
   if (email === localStorage.getItem('email') && password === localStorage.getItem('password')){
     localStorage.setItem('sudah_login', 'true');
-  }
-  
-  swal({
+    const pesan = "Selamat Datang " + localStorage.getItem('nama') + "!";
+    localStorage.setItem('pesan', pesan);
+    
+    swal({
     title: "Berhasil!",
 
     text: "Anda akan dialihkan ke halaman Dashboard dalam 2 detik.",
@@ -83,6 +84,45 @@ masuk.addEventListener('submit', (e)=>{
   setTimeout(()=>{
   window.location.replace('dashboard.html');
 }, 2000);
+  }
+  else {
+    if (email != localStorage.getItem('email') && password != localStorage.getItem('password')){
+      swal({
+    title: "Akun tidak ditemukan",
+
+    text: "Silahkan mendaftarkan akun terlebih dahulu. Anda akan dialihkan ke halaman daftar akun dalam 2 detik",
+
+    icon: "error",
+
+    button: true,
+  });
+  setTimeout(()=>{
+  window.location.replace('daftar.html');
+}, 2000);
+    }
+    else if (email != localStorage.getItem('email')){
+      swal({
+    title: "Email Salah!",
+
+    text: "Silahkan periksa lagi",
+
+    icon: "error",
+
+    button: true,
+  });
+    }
+    else if (password != localStorage.getItem('password')){
+swal({
+    title: "Password salah!",
+
+    text: "Silahkan periksa lagi",
+
+    icon: "error",
+
+    button: true,
+  });
+    }
+  }
 });
   
   
