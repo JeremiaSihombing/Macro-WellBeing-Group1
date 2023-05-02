@@ -77,9 +77,12 @@
                 <p class="fw-semibold"><i class="fa-solid fa-location-dot"></i>Batam</p>
             </div>
         </div>
-        <div class="data-profile mt-4 p-5">
-            <div class="edit d-flex justify-content-end">
-                <span><i class="fa-solid fa-pen-to-square"></i><a href="">Ubah</a></span>
+        <!-- For Label Ubah -->
+        <input type="checkbox" id="check">
+        <!-- For Label Ubah -->
+        <div class="data data-profile mt-4 p-5">
+            <div class="ubah d-flex justify-content-end">
+                <label for="check"><i class="fa-solid fa-pen-to-square"></i>Ubah</label>
             </div>
             <div class="align-items-start gap-5">
                 <div class="isi">
@@ -117,6 +120,53 @@
                     <p>0888888</p>
                     <hr>
                 </div>
+            </div>
+        </div>
+
+        <!-- EDIT DATA -->
+        <div class="edit data-profile mt-4 p-5">
+            <div class="edit d-flex justify-content-start">
+                <h1 class="fw-bold mb-4" style="font-size: 32px;">Edit Profil</h1>
+            </div>
+            <div class="align-items-start gap-5">
+                <form>
+                    <div class="isi mb-3">
+                        <p class="fw-semibold">Username</p>
+                        <input class="form-control" type="text" name="username" id="username" value="@axelinho">
+                    </div>
+                    <div class="isi mb-3">
+                        <p class="fw-semibold">Nama Panjang</p>
+                        <input class="form-control" type="text" name="username" id="username" value="Axel Syaifudin">
+                    </div>
+                    <div class="isi mb-3">
+                        <p class="fw-semibold">Email</p>
+                        <input class="form-control" type="text" name="username" id="username" value="axelinho22@gmail.com">
+                    </div>
+                    <div class="isi mb-3">
+                        <p class="fw-semibold">Tanggal Lahir</p>
+                        <input type="text" class="form-control" name="birthdate" id="birthdate" value="22-04-2003">
+                    </div>
+                    <div class="isi mb-3">
+                        <p class="fw-semibold">Jenis Kelamin</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option>Pilih Jenis Kelamin</option>
+                            <option value="1" selected>Laki-laki</option>
+                            <option value="2">Perempuan</option>
+                          </select>
+                    </div>
+                    <div class="isi mb-3">
+                        <p class="fw-semibold">Kota</p>
+                        <input class="form-control" type="text" name="username" id="username" value="Batam">
+                    </div>
+                    <div class="isi mb-3">
+                        <p class="fw-semibold">No Telepon</p>
+                        <input class="form-control" type="text" name="username" id="username" value="088888">
+                    </div>
+                    <div>
+                        <a href=""><button class="btn-batal" type="button">Batal</button></a>
+                        <button class="btn-edit mx-2" type="button">Simpan Perubahan</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

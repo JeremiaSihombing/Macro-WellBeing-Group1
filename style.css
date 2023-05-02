@@ -473,10 +473,63 @@ h1.profile-header {
   width: 820px;
 }
 
-.edit {
+.ubah {
   color: #17CA9C;
 }
 
-.edit a {
+.ubah a {
   color: #17CA9C;
+}
+
+.btn-batal {
+  padding: 0px 20px 0px 20px;
+  height: 52px;
+  border: 2px solid #17CA9C;
+  border-radius: 10px;
+  color: #17CA9C;
+  background-color: #fff;
+}
+
+.btn-batal:hover {
+  color: white;
+  background-color: #17CA9C;
+}
+
+.btn-edit {
+  height: 52px;
+  border: 2px solid #17CA9C;
+  padding: 0px 20px 0px 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: #17CA9C;
+}
+
+.btn-edit:hover {
+  color: #17CA9C;
+  background-color: #fff;
+}
+
+.edit {
+  display: none;
+}
+
+#check:checked~.edit {
+  display: block;
+}
+
+#check:checked~.data {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.ubah label {
+  color: #17CA9C;
+  cursor: pointer;
+}
+
+.ubah label:hover {
+  text-decoration: underline;
 }
