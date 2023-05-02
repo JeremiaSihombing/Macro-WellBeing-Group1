@@ -444,10 +444,6 @@ h1.profile-header {
   /* margin-left: 200px; */
 }
 
-.content-profile {
-  /* margin-left: 210px; */
-}
-
 .top-text p {
   margin-bottom: 0px;
 }
@@ -475,4 +471,12 @@ h1.profile-header {
 .isi hr {
   margin-top: 5px;
   width: 820px;
+}
+
+.edit {
+  color: #17CA9C;
+}
+
+.edit a {
+  color: #17CA9C;
 }
