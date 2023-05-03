@@ -9,7 +9,18 @@
 
 }
 
+/* .btn-nav {
+  height: 56px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+} */
 
+.btn-nav:hover {
+  background-color: #2A7E69;
+}
 
 
 #hero-container {
@@ -172,6 +183,10 @@ a {
   text-decoration: none;
 }
 
+.btn1:hover {
+  background-color: #2A7E69;
+}
+
 .form-control {
   width: 545px;
   height: 50px;
@@ -279,6 +294,10 @@ a {
   color: white;
 }
 
+.artikel-lainnya button:hover {
+  background-color: #2A7E69;
+}
+
 /* justify */
 .isi-layanan,
 .isi-artikel,
@@ -335,6 +354,10 @@ a:hover {
 
 .btn {
   width: 200px;
+}
+
+.btn:hover {
+  background-color: #2A7E69;
 }
 
 /* .btn-danger {
