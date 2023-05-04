@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,99 +78,100 @@
         <div class="top-profile d-flex gap-4">
             <img src="images/profile.png" alt="My Profile">
             <div class="top-text">
-                <p class="fw-bold">Axel Syaifudin</p>
-                <p class="username"><u>@axelinho</u></p>
-                <p class="fw-semibold"><i class="fa-solid fa-location-dot"></i>Batam</p>
+                <p class="fw-bold nama"></p>
+                <p class="username"><u></u></p>
+                <p class="fw-semibold"><i class="fa-solid fa-location-dot"></i><p class="kota">(kota belum diisi)</p></p>
             </div>
         </div>
         <!-- For Label Ubah -->
-        <input type="checkbox" id="check">
+        <div class="user-profile">
         <!-- For Label Ubah -->
         <div class="data data-profile mt-4 p-5">
             <div class="ubah d-flex justify-content-end">
-                <label for="check"><i class="fa-solid fa-pen-to-square"></i>Ubah</label>
+                <label><i class="fa-solid fa-pen-to-square"></i>Ubah</label>
             </div>
             <div class="align-items-start gap-5">
                 <div class="isi">
                     <p class="fw-semibold">Username</p>
-                    <p>@axelinho</p>
+                    <p class="username">(belum diisi)</p>
                     <hr>
                 </div>
                 <div class="isi">
                     <p class="fw-semibold">Nama Panjang</p>
-                    <p>Axelinho Syaifudin</p>
+                    <p class="nama"></p>
                     <hr>
                 </div>
                 <div class="isi">
                     <p class="fw-semibold">Email</p>
-                    <p>axelinho22@gmail.com</p>
+                    <p class="email"></p>
                     <hr>
                 </div>
                 <div class="isi">
                     <p class="fw-semibold">Tanggal Lahir</p>
-                    <p>22-04-2003</p>
+                    <p class="tanggal_lahir">(belum diisi)</p>
                     <hr>
                 </div>
                 <div class="isi">
                     <p class="fw-semibold">Jenis Kelamin</p>
-                    <p>Laki-laki</p>
+                    <p class="jenis_kelamin">(belum diisi)</p>
                     <hr>
                 </div>
                 <div class="isi">
                     <p class="fw-semibold">Kota</p>
-                    <p>Batam</p>
+                    <p class="kota">(belum diisi)</p>
                     <hr>
                 </div>
                 <div class="isi">
                     <p class="fw-semibold">No Telepon</p>
-                    <p>0888888</p>
+                    <p class="no_hp">(belum diisi)</p>
                     <hr>
                 </div>
             </div>
         </div>
+        </div>
 
         <!-- EDIT DATA -->
-        <div class="edit data-profile mt-4 p-5">
+        <div class="edit data-profile mt-4 p-5 edit-container">
             <div class="edit d-flex justify-content-start">
                 <h1 class="fw-bold mb-4" style="font-size: 32px;">Edit Profil</h1>
             </div>
             <div class="align-items-start gap-5">
-                <form>
+                <form class="edit-profil">
                     <div class="isi mb-3">
                         <p class="fw-semibold">Username</p>
-                        <input class="form-control" type="text" name="username" id="username" value="@axelinho">
+                        <input class="form-control" type="text" name="username" id="username" required>
                     </div>
                     <div class="isi mb-3">
                         <p class="fw-semibold">Nama Panjang</p>
-                        <input class="form-control" type="text" name="username" id="username" value="Axel Syaifudin">
+                        <input class="form-control" type="text" name="nama" id="nama" required>
                     </div>
                     <div class="isi mb-3">
                         <p class="fw-semibold">Email</p>
-                        <input class="form-control" type="text" name="username" id="username" value="axelinho22@gmail.com">
+                        <input class="form-control" type="email" name="email" id="email" required>
                     </div>
                     <div class="isi mb-3">
                         <p class="fw-semibold">Tanggal Lahir</p>
-                        <input type="text" class="form-control" name="birthdate" id="birthdate" value="22-04-2003">
+                        <input type="date" class="form-control" name="tanggal_lahir" id="tanggal_lahir" required>
                     </div>
                     <div class="isi mb-3">
                         <p class="fw-semibold">Jenis Kelamin</p>
-                        <select class="form-select" aria-label="Default select example">
-                            <option>Pilih Jenis Kelamin</option>
-                            <option value="1" selected>Laki-laki</option>
-                            <option value="2">Perempuan</option>
+                        <select class="form-select" aria-label="Default select example" name="jenis_kelamin" id="jenis_kelamin" required>
+                            <option value="">Pilih Jenis Kelamin</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
                           </select>
                     </div>
                     <div class="isi mb-3">
                         <p class="fw-semibold">Kota</p>
-                        <input class="form-control" type="text" name="username" id="username" value="Batam">
+                        <input class="form-control" type="text" name="kota" id="kota" required>
                     </div>
                     <div class="isi mb-3">
                         <p class="fw-semibold">No Telepon</p>
-                        <input class="form-control" type="text" name="username" id="username" value="088888">
+                        <input class="form-control" type="number" name="no_hp" id="no_hp"  required>
                     </div>
                     <div>
-                        <a href=""><button class="btn-batal" type="button">Batal</button></a>
-                        <button class="btn-edit mx-2" type="button">Simpan Perubahan</button>
+                        <button class="btn-batal" type="button">Batal</button>
+                        <button class="btn-edit mx-2" type="submit">Simpan Perubahan</button>
                     </div>
                 </form>
             </div>
@@ -177,10 +179,75 @@
     </div>
 </div>
 
-
+    <script>
+      let nama = null;
+      let email = null;
+      let profil = document.querySelector('.edit-profil');
+      let dataProfil = {
+        username: null,
+        tanggalLahir : null,
+        jenisKelamin : null,
+        kota: null,
+        noHp: null
+      }
+      function profiles(){
+        if (localStorage.getItem('sudah_login')){
+        nama = localStorage.getItem('nama');
+        email = localStorage.getItem('email');
+        dataProfil = JSON.parse(localStorage.getItem('profil'));
+        document.querySelectorAll('.nama').forEach((e)=>{
+          e.textContent = nama;
+        });
+        document.querySelector('.email').textContent = email;
+        }
+        if (localStorage.getItem('profil')){
+        document.querySelectorAll('.username').forEach((e)=>{
+          e.textContent = dataProfil.username;
+        });
+        document.querySelector('.tanggal_lahir').textContent = dataProfil.tanggalLahir;
+        document.querySelector('.jenis_kelamin').textContent = dataProfil.jenisKelamin;
+        document.querySelectorAll('.kota').forEach((e)=>{
+          e.textContent = dataProfil.kota;
+        });
+        document.querySelector('.no_hp').textContent = dataProfil.noHp;
+      }
+      }
+      profiles();
+      document.querySelector('.ubah').addEventListener('click', ()=>{
+        document.querySelector('.user-profile').style.display = 'none';
+        document.querySelector('.edit-container').style.display = 'block';
+        profil.elements.nama.value = nama;
+        profil.elements.email.value = email;
+        profil.elements.username.value = dataProfil.username;
+        profil.elements.tanggal_lahir.value = dataProfil.tanggalLahir;
+        profil.elements.jenis_kelamin.value = dataProfil.jenisKelamin;
+        profil.elements.kota.value = dataProfil.kota;
+        profil.elements.no_hp.value = dataProfil.noHp;
+      });
+      profil.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        document.querySelector('.user-profile').style.display = 'block';
+        document.querySelector('.edit-container').style.display = 'none';
+        dataProfil = {
+        username: profil.elements.username.value,
+        tanggalLahir : profil.elements.tanggal_lahir.value,
+        jenisKelamin : profil.elements.jenis_kelamin.value,
+        kota: profil.elements.kota.value,
+        noHp: profil.elements.no_hp.value
+      }
+      localStorage.setItem('profil', JSON.stringify(dataProfil));
+      profiles();
+      });
+      document.querySelector('.btn-batal').addEventListener('click', (e)=>{
+        document.querySelector('.user-profile').style.display = 'block';
+        document.querySelector('.edit-container').style.display = 'none';
+      });
+    </script>
+    
     <script src="keluar_akun.js"></script>
     <script src="navigasi.js"></script>
     <script src="cek_login.js"></script>
+    
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
