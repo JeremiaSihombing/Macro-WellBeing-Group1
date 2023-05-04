@@ -236,6 +236,13 @@
         noHp: profil.elements.no_hp.value
       }
       localStorage.setItem('profil', JSON.stringify(dataProfil));
+      swal({
+          title: "Profil Berhasil Disimpan",
+
+          icon: "success",
+
+          button: true,
+        });
       profiles();
       });
       document.querySelector('.btn-batal').addEventListener('click', (e)=>{
@@ -247,9 +254,8 @@
     <script src="keluar_akun.js"></script>
     <script src="navigasi.js"></script>
     <script src="cek_login.js"></script>
-    
-    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
       AOS.init();
     </script>
